@@ -35,33 +35,19 @@ public class CardTrick {
             //c.setValue(insert call to random number generator here)
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
         }
+        Card luckyCard=new Card();
+        luckyCard.setSuit("Heart");
+        luckyCard.setValue(4);
         
         //insert code to ask the user for Card value and suit, create their car
-        Card userInput=new Card();
-        System.out.println("Enter you choice between 1 to 13");
-        int userInput2=input.nextInt();
-        userInput.setValue(userInput2);
-        input.nextLine();
-        System.out.println("Choose a Suit (Diamond,Space,Heart,Club) ");
-        String SuitCard2=input.nextLine();
-        userInput.setSuit(SuitCard2);
        
-        
-        // and search magicHand here
-        boolean result=false;
-        for(Card magicHand1: magicHand){
-            if ((userInput.getValue()== magicHand1.getValue())&& (userInput.getSuit().equalsIgnoreCase(magicHand1.getSuit())))
-                    result = true;
       
         }
        
         
     }
    
-    Card luckyCard=new Card();
-    luckyCard.setSuit("Heart");
-    luckyCard.setValue(4);
-
+   
     
     
                     
