@@ -40,12 +40,31 @@ public class CardTrick {
         luckyCard.setValue(4);
         
         //insert code to ask the user for Card value and suit, create their car
-       
-      
-        }
+       boolean result=false;
+       for(Card magicHand1:magicHand)
+       {
+      if((luckyCard.getValue()==magicHand1.getValue() &&luckyCard.getSuit().equalsIgnoreCase(magicHand1.getSuit())));
+
+
+          }
+        System.out.println("Your Lucky Card is :" +luckyCard.getValue()+"from the Suit" +luckyCard.getSuit());
+        System.out.println("The cards are:");
+         for(Card magicHand1:magicHand){
+             System.out.println(magicHand1.getValue() + "of" +magicHand1.getSuit() );
+             
+    }
+
+     if(result==true){
+         System.out.println("You win");
+     }
+     else{
+         System.out.println("better luck next time");
+     }
+     }
+    }
        
         
-    }
+    
    
    
     
@@ -54,7 +73,7 @@ public class CardTrick {
             
             
                     
-        }
+        
 
         //Then report the result here
     
