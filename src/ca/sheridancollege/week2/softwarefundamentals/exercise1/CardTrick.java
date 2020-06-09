@@ -57,6 +57,12 @@ public class CardTrick {
        
         
     }
+   
+    Card luckyCard=new Card();
+    luckyCard.setSuit("Heart");
+    luckyCard.setValue(4);
+
+    
     
                     
             
